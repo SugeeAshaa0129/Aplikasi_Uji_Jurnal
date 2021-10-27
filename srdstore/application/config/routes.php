@@ -57,4 +57,4 @@ $route['about'] = 'welcome/about';
 $route['contact'] = 'welcome/contact';
 
 $route['admin'] = 'admin/overview';
-// $route['register'] = 'Register';
+

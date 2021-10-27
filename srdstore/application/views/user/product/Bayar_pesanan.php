@@ -92,6 +92,7 @@
    </div>
  </div>
 </div>
+<?php $this->load->view("user/_partials/footer.php") ?>
 
 <?php $this->load->view("user/_partials/scrolltop.php") ?>
 <?php $this->load->view("user/_partials/modal.php") ?>

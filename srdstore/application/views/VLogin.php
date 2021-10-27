@@ -1,12 +1,7 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login-Tokobuah Sugeri Ashari R</title>
+	<title>Halaman Login</title>
    <!--Made with love by Mutiullah Samim -->
    
 	<!--Bootsrap 4 CDN-->
@@ -17,10 +12,15 @@
 
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
 </head>
 <style type="text/css">
 	html,body{
-background-image: url('../upload/image/back_logo.jpg');
+		background-image: url('../upload/image/back_logo.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -33,7 +33,7 @@ align-content: center;
 }
 
 .card{
-/*height: 330px;*/
+height: 330px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
@@ -108,76 +108,54 @@ color: white;
 margin-left: 4px;
 }
 
-.regulation{
-text-shadow: 0px 0px 0px black;
-margin-left: 120px;
-font-size: 15px;
-color: #FFE100;
-font-weight: bolder;
--webkit-text-stroke: 0.07em #000000;
+h4 {
+
+	font-family: monospace;
 }
 </style>
 <body>
 	<?php $this->load->view("preloader/loading.php") ?>
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
+
 		<div class="card ">
 			<div class="card-header">
 				
-				<h3><center> Silahkan Registrasi </center></h3>
+				<h3><center> Silahkan Login </center></h3>
 
 
 			</div>
 			<div class="card-body">
 				
-				<form action="<?php echo base_url('index.php/VRegistrasi') ?>" method="post">
-					<h5><font color="white"> no telepon</font></h5>
+				<form action="<?php echo base_url('index.php/admin/dashboard') ?>" method="post">
+					<h5><font color="white"> No Telepon</font></h5>
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
 							
-							<input required type="text" name="txt_no_tlp" class="form-control" placeholder="0856xxxxxxxx">
+							<input required type="text" name="txt_no_tlp"  class="form-control" placeholder="0895xxxxxxxxx">
 						</div>
-
-						<h5><font color="white"> Email </font></h5>
-						<div class="input-group form-group">
-							<div class="input-group-prepend">
-								<span class="input-group-text"><i class="fas fa-user"></i></span>
-							</div>
-							
-							<input required type="text" name="txt_email" class="form-control" placeholder="your email">
-						</div>
-
-						<h5><font color="white"> Username</font></h5>
-						<div class="input-group form-group">
-							<div class="input-group-prepend">
-								<span class="input-group-text"><i class="fas fa-user"></i></span>
-							</div>
-							
-							<input required type="text" name="txt_user" class="form-control" placeholder="username">
-						</div>
-
 					<h5><font color="white">Password</font></h5>
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
 						
-							<input required type="password" name="txt_pass" class="form-control" placeholder="password">
+							<input required type="Password" name="txt_pass" class="form-control" placeholder="password">
 						</div>
 					
-							<input hidden="" required type="password" name="role" value="2">
-				
 					<div class="form-group">
-
-							<div class="d-flex  justify-content-between align-items-center"style="margin: 0px;"> 
-								<a href="<?=base_url('index.php/Login')?>" style="color:white;">
-								<b>Sudah punya akun?</b></a>
 	
-							<input type="submit" name="btn_login"  value="tambah" class="btn float-right login_btn" style="color:
+
+							<div class="d-flex  justify-content-between align-items-center"
+							style="margin: 0px;"> <a href="<?=
+							base_url('index.php/VRegistrasi')?>" style="color:
+							white;"><b>Registrasi</b></a>
+	
+							<input type="submit" name="btn_login"  value="Login" class="btn float-right login_btn "style="color:
 							black;">
-							</div>
+								</div>
 
 					</div>
 				</form>

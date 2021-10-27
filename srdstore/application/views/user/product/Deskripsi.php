@@ -59,7 +59,7 @@
 
                     <tr>
                       <td>Harga: </td>
-                      <td><strong><div class="btn btn-sm btn-success"><?php echo $desk->price ?></div></strong></td>
+                      <td><strong><div class="btn btn-sm btn-success"><?php echo number_format($desk->price, 0,',','.') ?></div></strong></td>
                     </tr>
                   </table>
                   <br>
